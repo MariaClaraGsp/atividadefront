@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Cadastro- informática para a comunidade</h1>
+
+    <form action="recebeDados.java"method="post">
+
+        <p>Nome:  </p><input type="text" placeholder="digite seu nome" name="nome"><br>
+
+        <p>Data de nascimento</p><input type="date"name="dataNascimento"><br>
+
+        <p>Telefone:</p><input type="tel"name="Telefone"><br>
+
+        <p>Email:</p><input type="email"name="email"><br>
+
+        <p>Escolaridade:</p>
+        <input type="radio" name="escolaridade">Ensino medio <br>
+        <input type="radio" name="escolaridade">Superior <br>
+        <input type="radio" name="escolaridade">Fundamental<br>
+        <input type="radio" name="escolaridade">Não possui<br>
+        
+        <p>Região administrativa </p>
+        <select name="ra">
+            <option value="CEI">Ceilândia</option>
+            <option value="SN">Sol Nascente/Por do Sol</option>
+            <option value="BRAZ">Brazlândia</option>
+            <option value="SAM">Samambaia</option>
+            <option value="TAGUA">Taguatinga</option>
+        </select>
+
+        <p>limitação:</p>
+        <input type="checkbox" name="locomotiva">Locomotiva <br>
+        <input type="checkbox" name="auditiva">Auditiva <br>
+        <input type="checkbox" name="visual">Visual <br>
+        <input type="checkbox" name="nenhum">Nenhum <br>
+        <input type="checkbox" name="outros">Outros <br>
+        
+        <p>senha:</p>
+        <input type="password" name="senha"><br>
+
+        <p>confirme sua senha:</p>
+        <input type="password" name="confirme sua senha"><br><br>
+
+        <input type="submit" value="catastrar">
+
+    </form>
+</body>
+</html>
